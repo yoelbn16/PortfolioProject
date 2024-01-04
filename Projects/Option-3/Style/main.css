@@ -22,7 +22,7 @@ body {
 .container .formCon {
   margin: auto;
   width: 418px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
 }
 .container .formCon h1 {
@@ -49,7 +49,7 @@ body {
   font-weight: bold;
 }
 .container .formCon form .labelCon input {
-  border: 1px solid #D31C75;
+  border: 1px solid #d31c75;
   background-color: #fff;
   height: 50px;
   width: 418px;
@@ -59,13 +59,13 @@ body {
   font-family: heebo;
   font-size: 22px;
   font-weight: bold;
-  background-color: #D31C75;
+  background-color: #d31c75;
   height: 50px;
   width: 166px;
   line-height: 2;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   body {
     background-image: url("../images/PurpleBgMobile.png");
     background-size: contain;

@@ -1,124 +1,124 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    background-image: url("../images/PurpleBg.png");
-    background-size: fill;
-    background-repeat: no-repeat;
-    height: 100vh;
+	background-image: url('../images/PurpleBg.png');
+	background-size: fill;
+	background-repeat: no-repeat;
+	height: 100vh;
 }
 
-@mixin heebo ($fz, $fw) {
-    font-family: heebo;
-    font-size: $fz;
-    font-weight: $fw;
+@mixin heebo($fz, $fw) {
+	font-family: heebo;
+	font-size: $fz;
+	font-weight: $fw;
 }
 
 .container {
-    height: 640px;
-    width: 568px;
-    background-color: #1A1A1AD4;
-    display: flex;
-    margin-top: 158px;
-    margin-right: 295px;
+	height: 640px;
+	width: 568px;
+	background-color: #1a1a1ad4;
+	display: flex;
+	margin-top: 158px;
+	margin-right: 295px;
 
-    .formCon {
-        margin: auto;
-        width: 418px;
-        color: #FFF;
-        text-align: center;
+	.formCon {
+		margin: auto;
+		width: 418px;
+		color: #fff;
+		text-align: center;
 
-        h1 {
-            @include heebo(36px, 900);
-            margin-bottom: 20px;
-        }
+		h1 {
+			@include heebo(36px, 900);
+			margin-bottom: 20px;
+		}
 
-        p {
-            @include heebo(20px, normal);
-            margin-bottom: 44px;
-        }
+		p {
+			@include heebo(20px, normal);
+			margin-bottom: 44px;
+		}
 
-        form {
-            .labelCon {
-                display: flex;
-                flex-direction: column;
-                text-align: right;
-                margin-bottom: 18px;
+		form {
+			.labelCon {
+				display: flex;
+				flex-direction: column;
+				text-align: right;
+				margin-bottom: 18px;
 
-                label {
-                    @include heebo(16px, bold);
-                }
+				label {
+					@include heebo(16px, bold);
+				}
 
-                input {
-                    border: 1px solid #D31C75;
-                    background-color: #fff;
-                    height: 50px;
-                    width: 418px;
-                }
-            }
-        }
+				input {
+					border: 1px solid #d31c75;
+					background-color: #fff;
+					height: 50px;
+					width: 418px;
+				}
+			}
+		}
 
-        .button {
-            text-align: center;
-            @include heebo(22px, bold);
-            background-color: #D31C75;
-            height: 50px;
-            width: 166px;
-            line-height: 2;
-        }
-    }
+		.button {
+			text-align: center;
+			@include heebo(22px, bold);
+			background-color: #d31c75;
+			height: 50px;
+			width: 166px;
+			line-height: 2;
+		}
+	}
 }
 
-@media screen and (max-width:375px) {
-    body {
-        background-image: url("../images/PurpleBgMobile.png");
-        background-size: contain;
-        display: flex;
-    }
+@media screen and (max-width: 768px) {
+	body {
+		background-image: url('../images/PurpleBgMobile.png');
+		background-size: contain;
+		display: flex;
+	}
 
-    .container {
-        margin: auto;
-        width: 298px;
-        height: 440px;
+	.container {
+		margin: auto;
+		width: 298px;
+		height: 440px;
 
-        .formCon {
-            width: 230px;
-            display: flex;
-            flex-direction: column;
+		.formCon {
+			width: 230px;
+			display: flex;
+			flex-direction: column;
 
-            h1 {
-                font-size: 25px;
-                width: 150px;
-                align-self: center;
-                margin-bottom: 12px;
-            }
+			h1 {
+				font-size: 25px;
+				width: 150px;
+				align-self: center;
+				margin-bottom: 12px;
+			}
 
-            p {
-                font-size: 15px;
-                margin-bottom: 22px;
-            }
+			p {
+				font-size: 15px;
+				margin-bottom: 22px;
+			}
 
-            form {
-                .labelCon {
-                    label {
-                        font-size: 14px;
-                    }
+			form {
+				.labelCon {
+					label {
+						font-size: 14px;
+					}
 
-                    input {
-                        width: 230px;
-                        height: 28px;
-                    }
-                }
-            }
+					input {
+						width: 230px;
+						height: 28px;
+					}
+				}
+			}
 
-            .button {
-                width: 76px;
-                height: 33px;
-                font-size: 15px;
-            }
-        }
-    }
+			.button {
+				width: 76px;
+				height: 33px;
+				font-size: 15px;
+			}
+		}
+	}
 }

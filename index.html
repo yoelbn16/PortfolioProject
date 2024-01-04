@@ -10,6 +10,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet" />
 		<script src="./Script/MenuMobile.js"></script>
+		<script src="./Script/sendForm.js"></script>
 		<link rel="stylesheet" href="./Style/main.css" />
 	</head>
 
@@ -290,8 +291,8 @@
 				<div class="formCon">
 					<h3>צור קשר</h3>
 					<p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ</p>
-					<form action=""><label for="">שם מלא</label><input type="text" /> <label for="">דוא״ל</label><input type="text" /> <label for="">טלפון</label><input type="text" /> <label for="">תוכן ההודעה</label><input class="longerInput" type="text" /></form>
-					<div class="sendButton">שליחה</div>
+					<form action=""><label for="">שם מלא</label><input id="name" type="text" /> <label for="">דוא״ל</label><input id="email" type="text" /> <label for="">טלפון</label><input id="phone" type="text" /> <label for="">תוכן ההודעה</label><input id="content" class="longerInput" type="text" /></form>
+					<div class="sendButton" onclick="sendForm()">שליחה</div>
 				</div>
 				<img src="./Images/Rectangle 41.png" alt="" />
 			</div>
