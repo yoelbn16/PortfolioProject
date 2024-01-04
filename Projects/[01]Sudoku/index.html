@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./Styles/style.css" />
+		<script type="module" src="./Scripts/sudoku.js"></script>
+		<title>Sudoku</title>
+	</head>
+	<body class="d-flex vh-100">
+		<div class="container-md m-auto d-flex flex-column justify-content-center align-items-center">
+			<h1>SUDOKU</h1>
+			<div id="sudoku-grid"></div>
+			<div class="digits d-flex justify-content-around">
+				<div class="digit d-flex justify-content-center align-items-center" id="digit-1" onclick="select(1)">1</div>
+				<div class="digit d-flex justify-content-center align-items-center" id="digit-2" onclick="select(2)">2</div>
+				<div class="digit d-flex justify-content-center align-items-center" id="digit-3" onclick="select(3)">3</div>
+				<div class="digit d-flex justify-content-center align-items-center" id="digit-4" onclick="select(4)">4</div>
+				<div class="digit d-flex justify-content-center align-items-center" id="digit-5" onclick="select(5)">5</div>
+				<div class="digit d-flex justify-content-center align-items-center" id="digit-6" onclick="select(6)">6</div>
+				<div class="digit d-flex justify-content-center align-items-center" id="digit-7" onclick="select(7)">7</div>
+				<div class="digit d-flex justify-content-center align-items-center" id="digit-8" onclick="select(8)">8</div>
+				<div class="digit d-flex justify-content-center align-items-center" id="digit-9" onclick="select(9)">9</div>
+			</div>
+		</div>
+	</body>
+</html>

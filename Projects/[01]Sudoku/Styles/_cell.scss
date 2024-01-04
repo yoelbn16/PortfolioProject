@@ -1,0 +1,49 @@
+.cell {
+	height: 3vw;
+	width: 3vw;
+	margin: 0.0625vw;
+	border-radius: 0.3vw;
+	background-color: #eaeaea;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Rubik;
+	font-size: 1.3em;
+
+	&:nth-child(3),
+	&:nth-child(6) {
+		margin-right: 1vw;
+	}
+	&:nth-child(27),
+	&:nth-child(54) {
+		margin-bottom: 1vw;
+	}
+
+	&:hover {
+		background-color: lightgray;
+	}
+
+	&.base {
+		background-color: #023047;
+		color: #fff;
+		&:hover {
+			background-color: #219ebc;
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		height: 9vw;
+		width: 9vw;
+		border-radius: 0.9vw;
+		margin: 0.1875vw;
+
+		&:nth-child(3),
+		&:nth-child(6) {
+			margin-right: 3vw;
+		}
+		&:nth-child(27),
+		&:nth-child(54) {
+			margin-bottom: 3vw;
+		}
+	}
+}
