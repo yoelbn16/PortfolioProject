@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/PurpleBg.png");
+  background-size: fill;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  height: 640px;
+  width: 568px;
+  background-color: rgba(26, 26, 26, 0.831372549);
+  display: flex;
+  margin-top: 158px;
+  margin-right: 295px;
+}
+.container .formCon {
+  margin: auto;
+  width: 418px;
+  color: #FFF;
+  text-align: center;
+}
+.container .formCon h1 {
+  font-family: heebo;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.container .formCon p {
+  font-family: heebo;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 44px;
+}
+.container .formCon form .labelCon {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-bottom: 18px;
+}
+.container .formCon form .labelCon label {
+  font-family: heebo;
+  font-size: 16px;
+  font-weight: bold;
+}
+.container .formCon form .labelCon input {
+  border: 1px solid #D31C75;
+  background-color: #fff;
+  height: 50px;
+  width: 418px;
+}
+.container .formCon .button {
+  text-align: center;
+  font-family: heebo;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: #D31C75;
+  height: 50px;
+  width: 166px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url("../images/PurpleBgMobile.png");
+    background-size: contain;
+    display: flex;
+  }
+  .container {
+    margin: auto;
+    width: 298px;
+    height: 440px;
+  }
+  .container .formCon {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .formCon h1 {
+    font-size: 25px;
+    width: 150px;
+    align-self: center;
+    margin-bottom: 12px;
+  }
+  .container .formCon p {
+    font-size: 15px;
+    margin-bottom: 22px;
+  }
+  .container .formCon form .labelCon label {
+    font-size: 14px;
+  }
+  .container .formCon form .labelCon input {
+    width: 230px;
+    height: 28px;
+  }
+  .container .formCon .button {
+    width: 76px;
+    height: 33px;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=main.css.map */

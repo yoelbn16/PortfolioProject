@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f6f6f6;
+	font-size: 2rem;
+}
+#header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+
+	h1 {
+		color: #005792;
+		font-size: 1.5em;
+		font-family: 'Poppins';
+		font-weight: 700;
+	}
+}
+#quiz {
+	height: 90vh;
+}
+.controls {
+	width: 65%;
+	@media screen and (max-width: 767px) {
+		width: 80%;
+	}
+}
+
+@import 'buttons';
+@import 'flag';

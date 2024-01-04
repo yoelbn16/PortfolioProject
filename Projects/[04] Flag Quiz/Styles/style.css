@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-size: 2rem;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+#header h1 {
+  color: #005792;
+  font-size: 1.5em;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+#quiz {
+  height: 90vh;
+}
+
+.controls {
+  width: 65%;
+}
+@media screen and (max-width: 767px) {
+  .controls {
+    width: 80%;
+  }
+}
+
+.option {
+  width: 65%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1vh;
+  background-color: #005792;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Poppins";
+  font-size: 0.5em;
+}
+
+#next {
+  width: 65%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vh;
+  background-color: #bb6be3;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Poppins";
+}
+#next:hover {
+  background-color: #a35dc7;
+}
+
+@media screen and (max-width: 767px) {
+  #quiz {
+    height: 55vh;
+    padding-top: 0;
+  }
+  #quiz .option {
+    height: 10%;
+    margin: 0.5vh;
+    width: 80%;
+  }
+  #quiz #next {
+    height: 10%;
+    margin: 0.5vh;
+    width: 80%;
+  }
+}
+#flagImg {
+  min-width: 50%;
+  max-width: 60%;
+  max-height: 75%;
+  border-radius: 2vw;
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.4);
+}
+
+.score {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  #flag {
+    height: 35vh;
+  }
+  #flag #flagImg {
+    min-width: 70%;
+    max-width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

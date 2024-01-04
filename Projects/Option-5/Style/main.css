@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E5EEFF;
+  display: flex;
+}
+
+.boxDiscoverMobile {
+  display: none;
+}
+
+.gridContainer {
+  margin: 250px auto;
+  text-align: center;
+  width: 1246px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  gap: 20px;
+  grid-template-areas: "img1 img2 discover discover" "img3 img4 discover discover" "img7 img8 img5 img6" "form form img9 img10" "form form img11 img12" "form form img13 img14";
+}
+.gridContainer .boxDiscover {
+  background-color: #020253;
+  grid-area: discover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gridContainer .boxDiscover .titleCon h1 {
+  font-family: "Assistant";
+  font-size: 61px;
+  font-weight: bold;
+  color: #0EE1DA;
+  margin-bottom: 20px;
+}
+.gridContainer .boxDiscover .titleCon p {
+  font-family: "Assistant";
+  font-size: 20px;
+  font-weight: 400;
+  color: #F9F9F9;
+  width: 475px;
+}
+.gridContainer .boxExp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8E097C;
+  grid-area: form;
+}
+.gridContainer .boxExp .boxForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gridContainer .boxExp .boxForm h1 {
+  font-family: "Assistant";
+  font-size: 35px;
+  font-weight: bold;
+  color: #FFF;
+  margin-bottom: 23px;
+}
+.gridContainer .boxExp .boxForm p {
+  font-family: "Assistant";
+  font-size: 20px;
+  font-weight: 400;
+  color: #F9F9F9;
+  width: 475px;
+  margin-bottom: 70px;
+}
+.gridContainer .boxExp .boxForm .formCon form {
+  width: 500px;
+}
+.gridContainer .boxExp .boxForm .formCon form .labelCon {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.gridContainer .boxExp .boxForm .formCon form .labelCon label {
+  font-family: "Assistant";
+  font-size: 24px;
+  font-weight: bold;
+  color: #0EE1DA;
+}
+.gridContainer .boxExp .boxForm .formCon form .labelCon input {
+  width: 500px;
+  height: 60px;
+  background-color: #E5EEFF;
+  border: none;
+  border-bottom: 5px solid #0EE1DA;
+}
+.gridContainer .boxExp .boxForm .formCon form .labelCon #bigger {
+  height: 95px;
+  height: 170px;
+}
+.gridContainer .boxExp .boxForm .formCon form .button {
+  font-family: "Assistant";
+  font-size: 24px;
+  font-weight: bold;
+  color: #011560;
+  width: 500px;
+  height: 60px;
+  background-color: #0EE1DA;
+  line-height: 2.5;
+}
+.gridContainer .img {
+  width: 296px;
+  height: 270px;
+}
+.gridContainer .img1 {
+  grid-area: img1;
+}
+.gridContainer .img2 {
+  grid-area: img2;
+}
+.gridContainer .img3 {
+  grid-area: img3;
+}
+.gridContainer .img4 {
+  grid-area: img4;
+}
+.gridContainer .img5 {
+  grid-area: img5;
+}
+.gridContainer .img6 {
+  grid-area: img6;
+}
+.gridContainer .img7 {
+  grid-area: img7;
+}
+.gridContainer .img8 {
+  grid-area: img8;
+}
+.gridContainer .img9 {
+  grid-area: img9;
+}
+.gridContainer .img10 {
+  grid-area: img10;
+}
+.gridContainer .img11 {
+  grid-area: img11;
+}
+.gridContainer .img12 {
+  grid-area: img12;
+}
+.gridContainer .img13 {
+  grid-area: img13;
+}
+.gridContainer .img14 {
+  grid-area: img14;
+}
+
+@media screen and (max-width: 570px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .boxDiscoverMobile {
+    background-color: #020253;
+    display: block;
+    height: 340px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .boxDiscoverMobile .titleConMobile {
+    text-align: center;
+  }
+  .boxDiscoverMobile .titleConMobile h1 {
+    font-family: "Assistant";
+    font-size: 36px;
+    font-weight: bold;
+    color: #0EE1DA;
+    margin-bottom: 14px;
+  }
+  .boxDiscoverMobile .titleConMobile p {
+    font-family: "Assistant";
+    font-size: 20px;
+    font-weight: 400;
+    color: #F9F9F9;
+    width: 278px;
+  }
+  .boxDiscover {
+    display: none;
+  }
+  .boxDiscover .titleCon {
+    display: none;
+  }
+  .gridContainer {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(10, auto);
+    gap: 12px;
+    margin: 20px 0 30px;
+    width: 330px;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "form form" "form form" "form form" "img9 img10" "img11 img12" "img13 img14";
+  }
+  .gridContainer .img {
+    width: 158px;
+    height: 145px;
+  }
+  .gridContainer .boxExp {
+    width: 330px;
+    height: 518px;
+  }
+  .gridContainer .boxExp .boxForm h1 {
+    font-size: 25px;
+  }
+  .gridContainer .boxExp .boxForm p {
+    font-size: 15px;
+    width: 278px;
+  }
+  .gridContainer .boxExp .boxForm .formCon form {
+    width: 278px;
+  }
+  .gridContainer .boxExp .boxForm .formCon form .labelCon {
+    margin-bottom: 12px;
+  }
+  .gridContainer .boxExp .boxForm .formCon form .labelCon label {
+    font-size: 7px;
+  }
+  .gridContainer .boxExp .boxForm .formCon form .labelCon input {
+    width: 278px;
+    height: 33px;
+    border-bottom: 3px solid #0EE1DA;
+  }
+  .gridContainer .boxExp .boxForm .formCon form .labelCon #bigger {
+    height: 95px;
+  }
+  .gridContainer .boxExp .boxForm .formCon form .button {
+    width: 278px;
+    height: 33px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=main.css.map */

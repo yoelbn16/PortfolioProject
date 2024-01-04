@@ -1,0 +1,44 @@
+.option {
+	width: 65%;
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1vh;
+	background-color: #005792;
+	color: #fff;
+	font-weight: 300;
+	font-family: 'Poppins';
+	font-size: 0.5em;
+}
+#next {
+	width: 65%;
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2vh;
+	background-color: #bb6be3;
+	color: #fff;
+	font-weight: 300;
+	font-family: 'Poppins';
+	&:hover {
+		background-color: #a35dc7;
+	}
+}
+@media screen and (max-width: 767px) {
+	#quiz {
+		height: 55vh;
+		padding-top: 0;
+		.option {
+			height: 10%;
+			margin: 0.5vh;
+			width: 80%;
+		}
+		#next {
+			height: 10%;
+			margin: 0.5vh;
+			width: 80%;
+		}
+	}
+}

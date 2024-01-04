@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+@mixin heebo($fz, $fw) {
+    font-family: 'Heebo';
+    font-size: $fz;
+    font-weight: $fw;
+}
+
+.imageSection {
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .separator {
+        width: 50%;
+        height: 18px;
+        background-color: #FDBD03;
+    }
+
+    .imgCon {
+        flex-grow: 1;
+        display: flex;
+
+        img {
+            margin: auto;
+        }
+    }
+}
+
+.contactSection {
+    width: 55vw;
+    height: 100vh;
+    border-bottom: 18px solid #FDBD03;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .whatsapp {
+        align-self: flex-end;
+        width: 95px;
+        height: 95px;
+        background-color: #FDBD03;
+        border-radius: 50%;
+        display: flex;
+        margin: 38px;
+
+        img {
+            margin: auto;
+            height: 54px;
+            color: #000;
+        }
+    }
+
+    .headline {
+        width: 385px;
+
+        h1 {
+            @include heebo(66px, 900);
+            color: #FDBD03;
+            margin-bottom: 15px;
+        }
+
+        p {
+            @include heebo(20px, 400);
+            color: #020253;
+            margin-bottom: 38px;
+        }
+    }
+
+    form {
+        width: 856px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .labelCon {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+
+            label {
+                @include heebo(16px, bold);
+                color: #2C2C2C;
+            }
+
+            input {
+                border: none;
+                border-bottom: 4px solid #FDBD03;
+                background-color: #E5EEFF;
+                height: 50px;
+                width: 418px;
+            }
+
+            #biggerField {
+                width: 856px;
+                height: 142px;
+                margin-bottom: 82px;
+            }
+        }
+
+        .button {
+            background-color: #FDBD03;
+            width: 166px;
+            height: 50px;
+            @include heebo(22px, bold);
+            color: #000;
+            text-align: center;
+            line-height: 2.5;
+        }
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row-reverse;
+
+        .iconCon {
+            @extend .whatsapp;
+
+            img {
+                height: 32px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:570px) {
+    body {
+        flex-direction: column;
+    }
+
+    .imageSection {
+        width: 100vw;
+        height: 30vh;
+
+        .separator {
+            height: 10px;
+            width: 85vw;
+        }
+
+        .imgCon {
+            img {
+                width: 20vw;
+            }
+        }
+    }
+
+    .contactSection {
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        border-bottom: 10px solid #FDBD03;
+
+        .whatsapp {
+            display: none;
+        }
+
+        .headline {
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        form {
+            width: 84vw;
+            margin-bottom: 128px;
+
+            .labelCon {
+                label {
+                    font-size: 10px;
+                }
+
+                input {
+                    width: 84vw;
+                    height: 38px;
+                    border-bottom: 3px solid #FDBD03;
+                }
+
+                #biggerField {
+                    width: 84vw;
+                    height: 105px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .button {
+                width: 84vw;
+                font-size: 15px;
+            }
+        }
+
+        .social {
+            justify-content: center;
+
+            .iconCon {
+                display: block;
+                display: flex;
+                width: 45px;
+                height: 45px;
+                margin: 17px;
+
+                img {
+                    margin: auto;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}

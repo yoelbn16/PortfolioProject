@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 6.6666666667px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  html {
+    font-size: 13.3333333333px;
+  }
+}
+@media screen and (min-width: 3840px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.navBarCon {
+  display: flex;
+  justify-content: center;
+}
+
+.navBarCon {
+  background-color: #FFF;
+  border-top: 0.33rem solid #1AE0EC;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.45);
+  text-align: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+}
+.navBarCon .navBar {
+  width: 70vw;
+  height: 7vh;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBarCon .navBar .hamburger {
+  display: none;
+}
+.navBarCon .navBar a {
+  text-decoration: none;
+  color: #000;
+}
+.navBarCon .navBar .logoDesktop {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-family: "Croissant One";
+  font-size: 2.4rem;
+}
+.navBarCon .navBar .logoDesktop img {
+  height: 6rem;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+.navBarCon .navBar .logoMobile {
+  display: none;
+}
+.navBarCon .navMenu {
+  width: 25vw;
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+}
+.navBarCon .navMenu a {
+  text-align: center;
+  font-family: Heebo;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.navBarCon .navMenu a:hover {
+  color: #1AE0EC;
+}
+
+.spacer {
+  height: 7vh;
+  margin-top: -7vh;
+  visibility: hidden;
+}
+
+#navMobile {
+  display: none;
+}
+
+.titleCon {
+  background-color: rgba(19, 232, 241, 0.3882352941);
+  display: flex;
+  height: 46rem;
+}
+.titleCon .title {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titleCon .title h2,
+.titleCon .title p {
+  color: #3A3A3A;
+}
+.titleCon .title h2 {
+  font-family: Heebo;
+  font-size: 8rem;
+  font-weight: 900;
+}
+.titleCon .title p {
+  font-family: Heebo;
+  font-size: 2rem;
+  font-weight: medium;
+  width: 84.4rem;
+}
+.titleCon .title .buttonsCon {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.titleCon .title .buttonsCon .projectButton {
+  background-color: #1AE0EC;
+  height: 4rem;
+  width: 20rem;
+  text-align: center;
+  border-radius: 2rem;
+  margin: 0 2rem;
+  display: flex;
+}
+.titleCon .title .buttonsCon .projectButton:hover {
+  border: 0.2rem solid #008c94;
+}
+.titleCon .title .buttonsCon .projectButton:hover a {
+  color: #FFF;
+}
+.titleCon .title .buttonsCon .projectButton a {
+  margin: auto;
+  color: #3A3A3A;
+  font-family: Heebo;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.toolsCon {
+  background-color: #FFF;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 7vh;
+}
+.toolsCon .tools {
+  width: 70vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+@media screen and (max-width: 570px) {
+  .toolsCon .tools {
+    width: 90vw;
+  }
+}
+.toolsCon .tools img {
+  height: 7vh;
+}
+.toolsCon .toolsProject {
+  width: 70vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 25vw;
+  justify-content: space space-around;
+}
+@media screen and (max-width: 570px) {
+  .toolsCon .toolsProject {
+    width: 90vw;
+  }
+}
+.toolsCon .toolsProject img {
+  height: 7vh;
+}
+
+@media screen and (max-width: 570px) {
+  .navBarCon {
+    flex-wrap: wrap;
+  }
+  .navBarCon .navBar {
+    width: 90vw;
+  }
+  .navBarCon .navBar .hamburger {
+    display: block;
+  }
+  .navBarCon .navBar .hamburger .bar {
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    margin: 5px 0;
+    background-color: #1AE0EC;
+  }
+  .navBarCon .navBar .navMenu {
+    display: none;
+  }
+  .navBarCon .navBar .navMenu a {
+    display: none;
+  }
+  .navBarCon .navBar .logoDesktop {
+    display: none;
+  }
+  .navBarCon .navBar .logoMobile {
+    display: block;
+  }
+  .navBarCon .navBar .logoMobile img {
+    width: 40px;
+    border-radius: 50%;
+  }
+  .titleCon {
+    height: 330px;
+  }
+  .titleCon .title h2 {
+    font-size: 46px;
+  }
+  .titleCon .title p {
+    font-size: 15px;
+    width: 90vw;
+  }
+  .titleCon .title .buttonsCon .projectButton {
+    width: 134px;
+    height: 26px;
+    margin: 0 12px;
+  }
+  .titleCon .title .buttonsCon .projectButton a {
+    font-size: 12px;
+  }
+  #navMobile {
+    display: none;
+    height: 93vh;
+    width: 100vw;
+  }
+  #navMobile nav {
+    margin: auto;
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #navMobile nav a {
+    margin: 5vh 0;
+    font-family: Heebo;
+    font-size: 26px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #3A3A3A;
+  }
+  #navMobile nav a:hover {
+    color: #1AE0EC;
+    border-bottom: 1px solid #1AE0EC;
+  }
+  .toolsCon {
+    height: auto;
+  }
+  .toolsCon .tools {
+    flex-wrap: wrap;
+  }
+  .toolsCon .tools img {
+    width: 15vw;
+    height: 15vw;
+  }
+  .toolsCon .toolsProject {
+    justify-content: space-around;
+  }
+  .toolsCon .toolsProject img {
+    width: 15vw;
+    height: 15vw;
+    margin: 0;
+  }
+}
+.imageCon {
+  background-color: #EBFEFF;
+  display: flex;
+  z-index: 2;
+}
+.imageCon .imgDesktop {
+  margin: 5rem auto;
+  width: 60vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.imageCon .imgMobile {
+  display: none;
+}
+
+@media screen and (max-width: 570px) {
+  .imageCon .imgDesktop {
+    display: none;
+  }
+  .imageCon .imgMobile {
+    display: block;
+    margin: 50px auto;
+    width: 80vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  }
+}
+.creditsCon {
+  background-color: #000;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 6px solid #1AE0EC;
+}
+.creditsCon p {
+  color: #1AE0EC;
+  font-family: Heebo;
+  font-size: 20px;
+  font-weight: 200;
+  margin: auto 15px;
+}
+
+@media screen and (max-width: 570px) {
+  .creditsCon {
+    height: 30px;
+    border-bottom: 3px solid #1AE0EC;
+  }
+  .creditsCon p {
+    font-size: 9px;
+    margin: auto 8px;
+  }
+}/*# sourceMappingURL=projectPage.css.map */

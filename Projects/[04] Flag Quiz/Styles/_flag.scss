@@ -1,0 +1,21 @@
+#flagImg {
+	min-width: 50%;
+	max-width: 60%;
+	max-height: 75%;
+	border-radius: 2vw;
+	box-shadow: 0 0 2vw rgba(0, 0, 0, 0.4);
+}
+.score {
+	font-family: 'Poppins';
+	font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+	#flag {
+		height: 35vh;
+		#flagImg {
+			min-width: 70%;
+			max-width: 90%;
+		}
+	}
+}

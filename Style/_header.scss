@@ -1,0 +1,301 @@
+.navBarCon {
+    background-color: #FFF;
+    border-top: .33rem solid $primaryColor;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.45);
+    text-align: center;
+    @extend %flexHCenter;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+
+
+    .navBar {
+        width: 70vw;
+        height: 7vh;
+        background-color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .hamburger {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .logoDesktop {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            font-family: 'Croissant One';
+            font-size: 2.4rem;
+
+            img {
+                height: 6rem;
+                margin-right: 2rem;
+                border-radius: 50%;
+            }
+        }
+
+        .logoMobile {
+            display: none;
+        }
+    }
+
+    .navMenu {
+        width: 25vw;
+        display: flex;
+        align-items: right;
+        justify-content: space-between;
+
+        a {
+            text-align: center;
+            @include heebo(2.4rem, 400);
+
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+
+}
+
+.spacer {
+    height: 7vh;
+    margin-top: -7vh;
+    visibility: hidden;
+}
+
+#navMobile {
+    display: none;
+}
+
+.titleCon {
+    background-color: #13E8F163;
+    display: flex;
+    height: 46rem;
+
+    .title {
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2,
+        p {
+            color: $barelyGrey;
+        }
+
+        h2 {
+            @include heebo(8rem, 900);
+        }
+
+
+        p {
+            @include heebo(2rem, medium);
+            width: 84.4rem;
+        }
+
+        .buttonsCon {
+            padding-top: 2rem;
+            display: flex;
+            justify-content: center;
+
+            .projectButton {
+                background-color: $primaryColor;
+                height: 4rem;
+                width: 20rem;
+                text-align: center;
+                border-radius: 2rem;
+                margin: 0 2rem;
+                display: flex;
+
+                &:hover {
+                    border: .2rem solid #008c94;
+
+                    a {
+                        color: #FFF;
+                    }
+                }
+
+                a {
+                    margin: auto;
+                    color: $barelyGrey;
+                    @include heebo(1.8rem, 600);
+                    line-height: 2;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.toolsCon {
+    background-color: #FFF;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 7vh;
+
+
+
+    @mixin tools {
+        width: 70vw;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        @media screen and (max-width:570px) {
+            width: 90vw;
+        }
+    }
+
+    .tools {
+        @include tools;
+
+        img {
+            height: 7vh;
+        }
+    }
+
+    .toolsProject {
+        @include tools;
+        width: 25vw;
+        justify-content: space space-around;
+
+        img {
+            height: 7vh;
+        }
+    }
+}
+
+@media screen and (max-width:570px) {
+
+    .navBarCon {
+        flex-wrap: wrap;
+
+        .navBar {
+            width: 90vw;
+
+            .hamburger {
+                display: block;
+
+                .bar {
+                    width: 30px;
+                    height: 4px;
+                    border-radius: 3px;
+                    margin: 5px 0;
+                    background-color: $primaryColor;
+                }
+            }
+
+            .navMenu {
+                display: none;
+
+                a {
+                    display: none;
+                }
+            }
+
+            .logoDesktop {
+                display: none;
+            }
+
+            .logoMobile {
+                display: block;
+
+                img {
+                    width: 40px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .titleCon {
+        height: 330px;
+
+        .title {
+            h2 {
+                font-size: 46px;
+            }
+
+            p {
+                font-size: 15px;
+                width: 90vw;
+            }
+
+            .buttonsCon {
+                .projectButton {
+                    width: 134px;
+                    height: 26px;
+                    margin: 0 12px;
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    #navMobile {
+        display: none;
+        height: 93vh;
+        width: 100vw;
+
+        nav {
+            margin: auto;
+            height: 80vh;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            a {
+                margin: 5vh 0;
+                @include heebo(26px, 200);
+                text-decoration: none;
+                color: $barelyGrey;
+
+                &:hover {
+                    color: $primaryColor;
+                    border-bottom: 1px solid $primaryColor;
+                }
+            }
+        }
+    }
+
+    .toolsCon {
+        height: auto;
+
+        .tools {
+            flex-wrap: wrap;
+
+            img {
+                width: calc(90vw/6);
+                height: calc(90vw/6);
+            }
+        }
+
+        .toolsProject {
+            justify-content: space-around;
+
+            img {
+                width: calc(90vw/6);
+                height: calc(90vw/6);
+                margin: 0;
+            }
+        }
+    }
+}
